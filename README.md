@@ -76,9 +76,6 @@ Output contains each antibody's rank, identifier, gene assignment, sequence, ove
 | `ConsensusWriter.java` | Exports ranked results to CSV |
 
 ## Implementation notes
-
-This version was restored from a surviving PDF of the original code. It retains the class structure, scoring constants, and source attributions, with corrections documented in [CHANGES.md](CHANGES.md). Corrections include sorting, CSV handling, and motif-search behavior. The restored version has been tested on synthetic data but has not been checked for exact agreement with historical outputs.
-
 The program loads one input file into memory and uses an O(n log n) sort. Original experimental datasets are not included.
 
 ## Acknowledgments
