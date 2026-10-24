@@ -1,8 +1,8 @@
 # Antibody Ranking for HIV Vaccine Research
 
-A Java pipeline that scores and ranks antibody sequences using biological features to help prioritize candidates for experimental evaluation.
+A Java pipeline that scores and ranks antibody sequences using biological features to identify and prioritize candidates for experimental evaluation.
 
-I developed the scoring framework and original implementation during research in the Farzan Laboratory at Harvard Medical School and Boston Children's Hospital. Its outputs informed a study published in *Immunity*, on which I am a co-author:
+I independently developed this multi-objective scoring framework as a scientific programmer in the Farzan Laboratory at Harvard Medical School and Boston Children's Hospital. Its outputs informed a study published in *Immunity* Journal, on which I am a co-author:
 
 [Heavy-chain CDR3-engineered B cells facilitate in vivo evaluation of HIV-1 vaccine candidates](https://doi.org/10.1016/j.immuni.2023.07.003)
 
