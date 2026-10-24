@@ -33,23 +33,6 @@ Weights are parameters in `Ranking.calculateScore`; their values are set in `Mai
 
 I independently designed the biological scoring framework and implemented the original Java pipeline. CSV utility methods adapted from external examples are attributed in the source code.
 
-## Run
-
-Requires **Java 17+** and **Maven 3.6.3+**. From the repository root:
-
-```sh
-mvn clean package
-java -jar target/antibody-ranking.jar examples/synthetic-antibodies.csv ranked-antibodies.csv
-```
-
-To run the tests:
-
-```sh
-mvn test
-```
-
-The included example uses synthetic sequences to demonstrate the software; it does not contain experimental results.
-
 ## Input and output
 
 Input must be a comma-separated CSV with a header and at least 13 columns. The original column positions are retained:
@@ -76,7 +59,7 @@ Output contains each antibody's rank, identifier, gene assignment, sequence, ove
 | `ConsensusWriter.java` | Exports ranked results to CSV |
 
 ## Implementation notes
-The program loads one input file into memory and uses an O(n log n) sort. Original experimental datasets are not included.
+The program loads one input file into memory and uses an O(n log n) sort. Original experimental datasets are not included, but results of top-ranked antibodies are included. Presence of the YYD(F) motif in top antibodies is highlighted in yellow.
 
 ## Acknowledgments
 
